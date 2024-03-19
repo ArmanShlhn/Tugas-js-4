@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Form Data Pegawai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <form id="formPegawai" onsubmit="submitForm(event)">
+        <table>
+            <tr>
+                <th colspan="2">Form Data Pegawai</th>
+            </tr>
+            <tr>
+                <td><label for="nama">Nama  :</label></td>
+                <td><input style="width: 98%;" type="text" id="nama" name="nama" required></td>
+            </tr>
+            <tr>
+                <td><label for="jabatan">Jabatan:</label></td>
+                <td>
+                    <select style="width: 100%;" id="jabatan" name="jabatan" required>
+                        <option value="">Pilih Jabatan</option>
+                        <option value="Manager">Manager</option>
+                        <option value="Asisten">Asisten Manager</option>
+                        <option value="Staff">Staff</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="status">Status  :</label></td>
+                <td>
+                    <select style="width: 100%;" id="status" name="status" required>
+                        <option value="">Pilih Status</option>
+                        <option value="Menikah">Menikah</option>
+                        <option value="Belum Menikah">Belum Menikah</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<script src="datapegawai.js"></script>
+
+</body>
+</html>
